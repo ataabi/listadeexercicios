@@ -6,12 +6,10 @@
 def alunos():
     ''
 print('Media das Notas dos Alunos ')
-
 aluno = input('Digite o nome do Aluno : ')
 nota1 = float(input('Digite a primeira nota do aluno : '))
 nota2 = float(input('Digite a segunda note do aluno : '))
-media = nota1 + nota2 /2
-alunos = []
-alunos.append(aluno:nota1:nota2:media)
-notas = (alunos[0][1])+(alunos[0][2]) / 2
-print('%.s %.f' %(alunos[0][0],notas))
+mediat = (nota1 + nota2) /2
+alunos = [aluno,nota1,nota2]
+media = (((alunos.__getitem__(1))+(alunos.__getitem__(2)))/((alunos.__len__())-1))
+print(f'A média de {alunos.__getitem__(0)} é {media}')
